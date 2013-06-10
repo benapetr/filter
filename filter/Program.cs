@@ -20,7 +20,7 @@ namespace filter
                         position = s.IndexOf("+0000]") + 8;
                         int position_of_first = s.IndexOf("/", position);
                         int position_of_next = s.IndexOf("/", position_of_first + 1);
-                        s = s.Substring(0, position_of_next) + "HTTP" + s.Substring(s.LastIndexOf("/"));
+                        s = s.Substring(0, position_of_next) + " HTTP" + s.Substring(s.LastIndexOf("/"));
                         Console.WriteLine(s);
                     }
                 }
